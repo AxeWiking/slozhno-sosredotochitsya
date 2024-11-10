@@ -1,12 +1,19 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-background-color: var(--color-up-pink, pink);
+    --main-text-color: var(--color-dark, darkgray);
+    --title-color: var(--color-med-pink, pink);  
+    --accent-color: var(--color-up-violet, violet);
+    --button-color: var(--color-dark, darkgray);
+  }
+}
 
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --main-background-color: var(--color-up-pink, pink);
+  --main-text-color: var(--color-dark, darkgray);
+  --title-color: var(--color-med-pink, pink);  
+  --accent-color: var(--color-up-violet, violet);
+  --button-color: var(--color-dark, darkgray);  
 }
+
+

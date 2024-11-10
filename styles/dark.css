@@ -1,12 +1,17 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-background-color: var(--color-black, black);
+    --main-text-color: var(--color-down-pink, pink);
+    --title-color: var(--color-down-violet, violet);  
+    --accent-color: var(--color-red, red);
+    --button-color: var(--color-red, red);
+  }
+}
 
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --main-background-color: var(--color-black, black);
+  --main-text-color: var(--color-down-pink, pink);
+  --title-color: var(--color-down-violet, violet);  
+  --accent-color: var(--color-red, red);
+  --button-color: var(--color-red, red);
 }

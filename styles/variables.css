@@ -1,4 +1,10 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --color-black: #000028;
+  --color-dark: #353430;
+  --color-down-pink: #F1B2CE;
+  --color-med-pink: #FFC2E6;  
+  --color-up-pink: #FFF1F7;
+  --color-down-violet: #DB00FF;
+  --color-up-violet: #FF8DCB;  
+  --color-red: #FF0070;
+}
