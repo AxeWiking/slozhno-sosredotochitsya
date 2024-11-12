@@ -5,6 +5,7 @@
     --title-color: var(--color-down-violet, violet);  
     --accent-color: var(--color-red, red);
     --button-color: var(--color-red, red);
+    --cover-image: url(../images/cover-image-dark.png);
   }
 }
 
@@ -14,4 +15,5 @@
   --title-color: var(--color-down-violet, violet);  
   --accent-color: var(--color-red, red);
   --button-color: var(--color-red, red);
+  --cover-image: url(../images/cover-image-dark.png);  
 }
