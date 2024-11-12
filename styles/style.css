@@ -45,6 +45,11 @@ a:focus-visible {
   block-size: 100vh;
   min-block-size: 668px;
   padding: 1.25rem;
+  margin-bottom: 3.5rem;
+}
+
+.section {
+  margin-bottom: 3.5rem;
 }
 
 .header::before {
@@ -123,20 +128,20 @@ a:focus-visible {
   display: grid;
   grid-template-columns: 1fr 2fr;
   padding: 1.25rem;
-  gap: 1.25rem;  
+  gap: 1.25rem;
 }
 
 .complexity__card-list {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;    
+  gap: 1.25rem;
 }
 
 .concentration__title-wrap {
   display: grid;
   grid-template-columns: 1fr 2fr;
   padding: 1.25rem;
-  gap: 1.25rem;  
+  gap: 1.25rem;
 }
 
 .concentration__card-list {
@@ -150,13 +155,13 @@ a:focus-visible {
   display: grid;
   grid-template-columns: 1fr 2fr;
   padding: 1.25rem;
-  gap: 1.25rem;  
+  gap: 1.25rem;
 }
 
 .improvement__column-list {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;    
+  gap: 1.25rem;
 }
 
 .samples__card-list {
@@ -218,7 +223,7 @@ a:focus-visible {
 @media (width <= 768px) {
  
   .header__theme-menu {
-    justify-self: flex-end;    
+    justify-self: flex-end;
   }
   
   .header__theme-menu-list {

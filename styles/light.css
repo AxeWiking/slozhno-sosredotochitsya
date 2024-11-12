@@ -5,7 +5,7 @@
     --title-color: var(--color-med-pink, pink);  
     --accent-color: var(--color-up-violet, violet);
     --button-color: var(--color-dark, darkgray);
-    --cover-image: url(../images/cover-image-light.png);    
+    --cover-image: url(../images/cover-image-light.png);
   }
 }
 
@@ -17,5 +17,3 @@
   --button-color: var(--color-dark, darkgray);
   --cover-image: url(../images/cover-image-light.png);
 }
-
-
