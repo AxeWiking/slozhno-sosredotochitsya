@@ -1,12 +1,12 @@
 h1 {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  font-weight: 700;  
+  font-weight: 700;
   line-height: calc(5 / 6);
 }
 
 h2 {
   font-size: 1.125rem;
-  font-weight: 700;  
+  font-weight: 700;
   margin-bottom: 0.75rem;
 }
 
@@ -55,6 +55,7 @@ a:focus-visible {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
   block-size: 100vh;
   min-block-size: 668px;
   padding: 1.25rem;
@@ -121,11 +122,12 @@ a:focus-visible {
   display: flex;
   grid-column: span 2;
   justify-self: center;
+  align-self: flex-start;
 }
 
 .header__theme-menu-list {
   display: flex;
-  gap: 1.56rem;
+  gap: 1.125rem;
 }
 
 .header__title {
@@ -233,11 +235,11 @@ a:focus-visible {
  
   .header__theme-menu {
     justify-self: flex-end;
+    align-self: center;
   }
   
   .header__theme-menu-list {
     flex-direction: column;
-    justify-content: center;
   }
 
   .concentration__title {
