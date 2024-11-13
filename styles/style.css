@@ -254,17 +254,17 @@ a:focus-visible {
 
 @media (width <= 375px) {
   .header {
-    padding: 0.7rem;
-    margin-bottom: 1rem;
+    padding: 0.72rem;
+    margin-bottom: 1.25rem;
   }
   
   .section {
-    padding: 0.7rem;
-    margin-bottom: 1rem;
+    padding: 0.72rem;
+    margin-bottom: 1.25rem;
   }
 
   .footer {
-    padding: 0.7rem;
+    padding: 0.72rem;
   }
 
   .header__subtitle {
