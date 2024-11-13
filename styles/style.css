@@ -140,12 +140,6 @@ a:focus-visible {
   gap: 1.25rem;
 }
 
-.concentration__title-wrap {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 1.25rem;
-}
-
 .concentration__card-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -231,6 +225,10 @@ a:focus-visible {
     flex-direction: column;
     justify-content: center;
   }
+
+  .concentration__title {
+    inline-size: min-content;
+  }
   
   .concentration__card-list {
     grid-template-columns: 1fr;
@@ -238,10 +236,6 @@ a:focus-visible {
 }
 
 @media (width <= 375px) {
-  h2 {
-    margin-bottom: 0;
-  }
-
   .header {
     padding: 0.625rem;
     margin-bottom: 1.25rem;
@@ -260,14 +254,14 @@ a:focus-visible {
     grid-column: span 2;
   }
 
+  .concentration__title {
+    inline-size: auto;
+  }
+
   .complexity {
     grid-template-columns: 1fr;
   }
   
-  .concentration__title-wrap {
-    grid-template-columns: 1fr;
-  }
-
   .improvement {
     grid-template-columns: 1fr;
   }
