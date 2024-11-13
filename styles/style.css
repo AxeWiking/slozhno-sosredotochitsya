@@ -239,21 +239,21 @@ a:focus-visible {
 
 @media (width <= 375px) {
   h2 {
-    margin-bottom: 0.25rem;
+    margin-bottom: 0;
   }
 
   .header {
-    padding: 0.5rem;
+    padding: 0.625rem;
     margin-bottom: 1.25rem;
   }
   
   .section {
-    padding: 0.5rem;
+    padding: 0.625rem;
     margin-bottom: 1.25rem;
   }
 
   .footer {
-    padding: 0.5rem;
+    padding: 0.625rem;
   }
 
   .header__subtitle {
@@ -273,10 +273,7 @@ a:focus-visible {
   }
 
   .samples__card-list {
-    gap: 0.5rem;
-  }
-
-  .samples__card-list {
+    gap: 0.625rem;
     grid-template-columns: 1fr;
   }
 
