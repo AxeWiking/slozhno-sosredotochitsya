@@ -1,15 +1,25 @@
 h1 {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-weight: 700;  
   line-height: calc(5 / 6);
 }
 
 h2 {
   font-size: 1.125rem;
+  font-weight: 700;  
   margin-bottom: 0.75rem;
 }
 
-h3, h4 {
+h3 {
   font-size: 1.125rem;
+  font-weight: 700;
+  background-color: var(--accent-color, red);
+  margin-bottom: 0.75rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+  font-weight: 400;
   background-color: var(--accent-color, red);
   margin-bottom: 0.75rem;
 }
@@ -138,6 +148,10 @@ a:focus-visible {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+}
+
+.concentration__title {
+  inline-size: 25%;
 }
 
 .concentration__card-list {
