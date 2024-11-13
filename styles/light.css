@@ -2,7 +2,7 @@
   :root {
     --main-background-color: var(--color-up-pink, pink);
     --main-text-color: var(--color-dark, darkgray);
-    --title-color: var(--color-med-pink, pink);  
+    --title-color: var(--color-med-pink, pink);
     --accent-color: var(--color-up-violet, violet);
     --button-color: var(--color-dark, darkgray);
     --cover-image: url(../images/cover-image-light.png);
@@ -12,7 +12,7 @@
 .page.theme_light {
   --main-background-color: var(--color-up-pink, pink);
   --main-text-color: var(--color-dark, darkgray);
-  --title-color: var(--color-med-pink, pink);  
+  --title-color: var(--color-med-pink, pink);
   --accent-color: var(--color-up-violet, violet);
   --button-color: var(--color-dark, darkgray);
   --cover-image: url(../images/cover-image-light.png);

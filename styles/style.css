@@ -10,13 +10,14 @@ h2 {
 h3, h4 {
   font-size: 1.125rem;
   background-color: var(--accent-color, red);
+  margin-bottom: 0.75rem;
 }
 
 a {
   display: inline-block;
   text-shadow: 1px 1px var(--accent-color, red);
   border: solid 1px transparent;
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 a:hover {
@@ -30,6 +31,7 @@ a:focus-visible {
 .page {
   background-color: var(--main-background-color, inital);
   color: var(--main-text-color, inital);
+  background-attachment: fixed;
 }
 
 .title {
@@ -49,7 +51,8 @@ a:focus-visible {
 }
 
 .section {
-  margin-bottom: 3.5rem;
+  margin-bottom: 4rem;
+  padding: 1.25rem;
 }
 
 .header::before {
@@ -104,7 +107,7 @@ a:focus-visible {
 }
 
 .header__theme-menu {
-  display: flex;  
+  display: flex;
   grid-column: span 2;
   justify-self: center;
 }
@@ -127,7 +130,6 @@ a:focus-visible {
 .complexity {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  padding: 1.25rem;
   gap: 1.25rem;
 }
 
@@ -140,21 +142,18 @@ a:focus-visible {
 .concentration__title-wrap {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  padding: 1.25rem;
   gap: 1.25rem;
 }
 
 .concentration__card-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 1.25rem;
   gap: 1.25rem;
 }
 
 .improvement {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  padding: 1.25rem;
   gap: 1.25rem;
 }
 
