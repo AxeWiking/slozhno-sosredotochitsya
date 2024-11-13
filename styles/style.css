@@ -253,18 +253,27 @@ a:focus-visible {
 }
 
 @media (width <= 375px) {
+
+  h3 {
+    margin-bottom: 0.8rem;
+  }
+  
+  h4 {
+    margin-bottom: 0.8rem;
+  }
+  
   .header {
-    padding: 0.66rem;
+    padding: 0.64rem;
     margin-bottom: 1.25rem;
   }
   
   .section {
-    padding: 0.66rem;
+    padding: 0.64rem;
     margin-bottom: 1.25rem;
   }
 
   .footer {
-    padding: 0.66rem;
+    padding: 0.64rem;
   }
 
   .header__subtitle {
