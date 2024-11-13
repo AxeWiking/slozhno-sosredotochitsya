@@ -216,10 +216,6 @@ a:focus-visible {
   margin: auto;
 }
 
-.samples__image {
-  scale: 98%;
-}
-
 @media (prefers-color-scheme: dark) {
   .header__theme-menu::before {
     display: inline;
@@ -259,12 +255,12 @@ a:focus-visible {
 @media (width <= 375px) {
   .header {
     padding: 0.7rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem;
   }
   
   .section {
     padding: 0.7rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem;
   }
 
   .footer {
