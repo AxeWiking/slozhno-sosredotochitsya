@@ -255,11 +255,11 @@ a:focus-visible {
 @media (width <= 375px) {
 
   h3 {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.78rem;
   }
   
   h4 {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.78rem;
   }
   
   .header {
