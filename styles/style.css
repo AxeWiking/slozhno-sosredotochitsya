@@ -201,7 +201,7 @@ a:focus-visible {
 .improvement {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 0.9rem;
+  gap: 1rem;
 }
 
 .improvement__title {
