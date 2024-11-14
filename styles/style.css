@@ -186,7 +186,7 @@ a:focus-visible {
 .improvement__card-caption {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.55rem;
 }
 
 .samples__card-list {
