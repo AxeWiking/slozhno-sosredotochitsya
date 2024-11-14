@@ -8,25 +8,26 @@
   --color-up-violet: #FF8DCB;
   --color-red: #FF0070;
   --paddington: 1.25rem;
-  --header-caption-padding: 1.25rem;
+  --header-caption-padding: 3.4rem;
   --complexity-title-margin: 0.625rem;
   --complexity-caption-margin: 0.625rem;
   --complexity-content-margin: 1.25rem;
-  --concentration-title-margin: 0.625rem;
+  --concentration-title-margin: 1.25rem;
   --concentration-caption-margin: 0.625rem;
   --concentration-content-margin: 1.25rem;
-  --improvement-title-margin: 0.625rem;  
+  --improvement-title-margin: 0.625rem;
   --improvement-caption-margin: 0.625rem;
   --improvement-content-margin: 1.25rem;
   --samples-title-margin: 0.625rem;
-  --section-margin: 2.5rem;
+  --header-margin: 3.6rem;
+  --section-margin: 3.7rem;
 }
 
 @media (width <= 375px) {
   :root {
     --paddington: 0.625rem;
     --header-caption-padding: 0.625rem;
-    --complexity-title-margin: 0.625rem;    
+    --complexity-title-margin: 0.625rem;
     --complexity-caption-margin: 0.625rem;
     --complexity-content-margin: 0.625rem;
     --concentration-title-margin: 0.625rem;
@@ -36,6 +37,7 @@
     --improvement-caption-margin: 0.625rem;
     --improvement-content-margin: 0.625rem;
     --samples-title-margin: 0.625rem;
+    --header-margin: 2.5rem;
     --section-margin: 2.5rem;
   }
 }
