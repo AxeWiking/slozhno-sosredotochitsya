@@ -249,6 +249,10 @@ a:focus-visible {
     grid-auto-flow: row;
     gap: 0;
   }
+
+  .improvement__column-item p {
+    line-height: 1.4em;
+  }
 }
 
 @media (width <= 375px) {
