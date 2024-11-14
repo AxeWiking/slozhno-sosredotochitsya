@@ -152,6 +152,7 @@ a:focus-visible {
 .header__subtitle {
   grid-column: 2;
   justify-self: end;
+  padding-bottom: var(--section-margin, inital);
 }
 
 .complexity {
