@@ -19,5 +19,5 @@
   --button-color: var(--color-dark, darkgray);
   --contrast-color: var(--color-dark, darkgray);
   --cover-image: url(../images/cover-image-light.png);
-  --decor-content: "";  
+  --decor-content: "";
 }

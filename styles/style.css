@@ -60,17 +60,17 @@ a:focus-visible {
   align-items: center;
   block-size: 100vh;
   min-block-size: 668px;
-  padding: var(--paddington, 1.25rem);
-  margin-bottom: 2.5rem;
+  padding: var(--paddington, inital);
+  margin-bottom: var(--margination, inital);
 }
 
 .section {
-  margin-bottom: 2.5rem;
   padding: var(--paddington, 1.25rem);
+  margin-bottom: var(--margination, inital);  
 }
 
 .content {
-  margin-bottom: 0.75rem;
+  margin-bottom: var(--margination, inital);
 }
 
 .decorated-zone::before {
@@ -105,8 +105,8 @@ a:focus-visible {
   position: absolute;
   font-size: 20px;
   line-height: 25px;
-  right: 1.5rem;
-  top: 1.25rem;
+  right: calc(var(--paddington, 1.25rem) + 0.25rem);
+  top: var(--paddington, 1.25rem);
 }
 
 .header__theme-menu-button {
@@ -169,7 +169,7 @@ a:focus-visible {
   grid-template-columns: 1fr;
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
-  gap: 1.25rem;  
+  gap: 1.25rem;
 }
 
 .improvement {
@@ -209,7 +209,7 @@ a:focus-visible {
 }
 
 .footer {
-  position: relative;  
+  position: relative;
   display: flex;
   block-size: 100vh;
   min-block-size: 668px;
@@ -221,8 +221,7 @@ a:focus-visible {
 }
 
 @media (width <= 768px) {
- 
-  .header__theme-menu {
+   .header__theme-menu {
     justify-self: flex-end;
     align-self: center;
   }
@@ -237,7 +236,7 @@ a:focus-visible {
   
   .concentration__card-list {
     grid-auto-flow: row;
-  }  
+  }
 }
 
 @media (width <= 375px) {
@@ -245,18 +244,6 @@ a:focus-visible {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
   
-  .header {
-    margin-bottom: 1.25rem;
-  }
-  
-  .section {
-    margin-bottom: 1.25rem;
-  }
-
-  .content {
-    margin-bottom: 0.625rem;
-  }
-
   .header__subtitle {
     grid-column: span 2;
   }
