@@ -183,7 +183,7 @@ a:focus-visible {
   gap: 0.75rem;
 }
 
-.improvement__card-caption {
+.improvement__card-item {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -248,10 +248,6 @@ a:focus-visible {
   .concentration__card-list {
     grid-auto-flow: row;
     gap: 0;
-  }
-
-  .improvement__column-item p {
-    line-height: 1.35em;
   }
 }
 
