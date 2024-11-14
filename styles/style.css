@@ -66,15 +66,6 @@ a:focus-visible {
 
 .section {
   padding: 0 var(--paddington, 1.25rem);
-  margin-bottom: var(--section-margin, inital);
-}
-
-.caption {
-  margin-bottom: var(--caption-margin, inital);
-}
-
-.content {
-  margin-bottom: var(--content-margin, inital);
 }
 
 .decorated-zone::before {
@@ -159,10 +150,11 @@ a:focus-visible {
   padding-bottom: var(--header-caption-padding, inital);
 }
 
-.complexity {
+.complexity__section {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 0.75rem;
+  margin-bottom: var(--complexity-section-margin, inital);    
 }
 
 .complexity__title {
@@ -175,6 +167,10 @@ a:focus-visible {
 
 .complexity__content {
   margin-bottom: var(--complexity-content-margin, inital);
+}
+
+.concentration__section {
+  margin-bottom: var(--concentration-section-margin, inital);
 }
 
 .concentration__title {
@@ -198,10 +194,11 @@ a:focus-visible {
   gap: 1rem;
 }
 
-.improvement {
+.improvement__section {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 1rem;
+  margin-bottom: var(--improvement-section-margin, inital);
 }
 
 .improvement__title {
@@ -220,6 +217,10 @@ a:focus-visible {
   display: flex;
   flex-direction: column;
   gap: 0.625rem;
+}
+
+.samples__section {
+  margin-bottom: var(--samples-section-margin, inital);
 }
 
 .samples__title {
