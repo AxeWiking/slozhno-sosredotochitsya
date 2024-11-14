@@ -7,6 +7,7 @@
     --button-color: var(--color-red, red);
     --contrast-color: var(--color-red, violet);
     --cover-image: url(../images/cover-image-dark.png);
+    --decor-content: "REC\25CF";
   }
 }
 
@@ -18,4 +19,5 @@
   --button-color: var(--color-red, red);
   --contrast-color: var(--color-red, violet);
   --cover-image: url(../images/cover-image-dark.png);
+  --decor-content: "REC\25CF";
 }

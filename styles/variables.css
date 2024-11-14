@@ -7,4 +7,11 @@
   --color-down-violet: #DB00FF;
   --color-up-violet: #FF8DCB;
   --color-red: #FF0070;
+  --paddington: 1.25rem;
+}
+
+@media (width <= 375px) {
+  :root {
+    --paddington: 0.625rem;
+  }
 }

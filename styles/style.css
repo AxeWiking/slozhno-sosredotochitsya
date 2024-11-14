@@ -7,7 +7,6 @@ h1 {
 h2 {
   font-size: 1.125rem;
   font-weight: 700;
-  margin-bottom: 0.75rem;
   color: var(--contrast-color, yellow);
 }
 
@@ -15,14 +14,12 @@ h3 {
   font-size: 1.125rem;
   font-weight: 700;
   background-color: var(--accent-color, red);
-  margin-bottom: 0.75rem;
 }
 
 h4 {
   font-size: 1.125rem;
   font-weight: 400;
   background-color: var(--accent-color, red);
-  margin-bottom: 0.75rem;
 }
 
 a {
@@ -43,6 +40,10 @@ a:focus-visible {
 .page {
   background-color: var(--main-background-color, inital);
   color: var(--main-text-color, inital);
+  background-image: var(--cover-image, url(../images/cover-image.png));
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
@@ -59,41 +60,59 @@ a:focus-visible {
   align-items: center;
   block-size: 100vh;
   min-block-size: 668px;
-  padding: 1.25rem;
+  padding: var(--paddington, 1.25rem);
   margin-bottom: 2.5rem;
 }
 
 .section {
   margin-bottom: 2.5rem;
-  padding: 1.25rem;
+  padding: var(--paddington, 1.25rem);
 }
 
-.header::before {
+.content {
+  margin-bottom: 0.75rem;
+}
+
+.decorated-zone::before {
   content: "";
   position: absolute;
   block-size: 25px;
   inline-size: 25px;
-  right: 1.25rem;
-  top: 1.25rem;
+  right: var(--paddington, 1.25rem);
+  top: var(--paddington, 1.25rem);
   border-top: solid 1px var(--button-color, red);
   border-right: solid 1px var(--button-color, red);
 }
 
-.header::after {
+.decorated-zone::after {
   content: "";
   position: absolute;
   block-size: 25px;
   inline-size: 25px;
-  left: 1.25rem;
-  bottom: 1.25rem;
+  left: var(--paddington, 1.25rem);
+  bottom: var(--paddington, 1.25rem);
   border-left: solid 1px var(--button-color, red);
   border-bottom: solid 1px var(--button-color, red);
+}
+
+.header__theme-menu::before {
+  display: inline;
+  content: var(--decor-content, "");
+  text-align: center;
+  vertical-align: middle;
+  color: var(--button-color, red);
+
+  position: absolute;
+  font-size: 20px;
+  line-height: 25px;
+  right: 1.5rem;
+  top: 1.25rem;
 }
 
 .header__theme-menu-button {
   font-size: 1.56rem;
   line-height: 1em;
-  padding: 0 1em 0;
+  padding: 0 0.5em 0;
   text-transform: lowercase;
   border: solid 1px transparent;
   color: var(--button-color, red);
@@ -111,12 +130,6 @@ a:focus-visible {
 
 .header__theme-menu-button:hover {
   border: solid 1px rgb(from var(--button-color, red) r g b / 40%);
-}
-
-.decorated-zone {
-  background-image: var(--cover-image, url(../images/cover-image.png));
-  background-position: center;
-  background-size: cover;
 }
 
 .header__theme-menu {
@@ -147,31 +160,21 @@ a:focus-visible {
   gap: 1.25rem;
 }
 
-.complexity__card-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-
 .concentration__title {
   inline-size: 25%;
 }
 
 .concentration__card-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
+  grid-template-columns: 1fr;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 1.25rem;  
 }
 
 .improvement {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 1.25rem;
-}
-
-.improvement__column-list {
-  display: flex;
-  flex-direction: column;
   gap: 1.25rem;
 }
 
@@ -206,30 +209,15 @@ a:focus-visible {
 }
 
 .footer {
+  position: relative;  
   display: flex;
   block-size: 100vh;
   min-block-size: 668px;
-  padding: 1.25rem;
+  padding: var(--paddington, 1.25rem);
 }
 
 .footer__title {
   margin: auto;
-}
-
-@media (prefers-color-scheme: dark) {
-  .header__theme-menu::before {
-    display: inline;
-    content: "REC\25CF";
-    text-align: center;
-    vertical-align: middle;
-    color: var(--button-color, red);
-  
-    position: absolute;
-    font-size: 20px;
-    line-height: 25px;
-    right: 1.5rem;
-    top: 1.25rem;
-  }
 }
 
 @media (width <= 768px) {
@@ -248,32 +236,25 @@ a:focus-visible {
   }
   
   .concentration__card-list {
-    grid-template-columns: 1fr;
-  }
+    grid-auto-flow: row;
+  }  
 }
 
 @media (width <= 375px) {
-
-  h3 {
-    margin-bottom: 0.76rem;
-  }
-  
-  h4 {
-    margin-bottom: 0.76rem;
+  h1 {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
   
   .header {
-    padding: 0.64rem;
     margin-bottom: 1.25rem;
   }
   
   .section {
-    padding: 0.64rem;
     margin-bottom: 1.25rem;
   }
 
-  .footer {
-    padding: 0.64rem;
+  .content {
+    margin-bottom: 0.625rem;
   }
 
   .header__subtitle {
