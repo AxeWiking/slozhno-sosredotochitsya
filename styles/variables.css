@@ -8,16 +8,34 @@
   --color-up-violet: #FF8DCB;
   --color-red: #FF0070;
   --paddington: 1.25rem;
-  --section-margin: 3.85rem;
-  --caption-margin: 0.85rem;
-  --content-margin: 1rem;
+  --header-caption-padding: 1.25rem;
+  --complexity-title-margin: 0.625rem;
+  --complexity-caption-margin: 0.625rem;
+  --complexity-content-margin: 1.25rem;
+  --concentration-title-margin: 0.625rem;
+  --concentration-caption-margin: 0.625rem;
+  --concentration-content-margin: 1.25rem;
+  --improvement-title-margin: 0.625rem;  
+  --improvement-caption-margin: 0.625rem;
+  --improvement-content-margin: 1.25rem;
+  --samples-title-margin: 0.625rem;
+  --section-margin: 2.5rem;
 }
 
 @media (width <= 375px) {
   :root {
     --paddington: 0.625rem;
-    --section-margin: 2.7rem;
-    --caption-margin: 0.6rem;
-    --content-margin: 0.88rem;
+    --header-caption-padding: 0.625rem;
+    --complexity-title-margin: 0.625rem;    
+    --complexity-caption-margin: 0.625rem;
+    --complexity-content-margin: 0.625rem;
+    --concentration-title-margin: 0.625rem;
+    --concentration-caption-margin: 0.625rem;
+    --concentration-content-margin: 0.625rem;
+    --improvement-title-margin: 0.625rem;
+    --improvement-caption-margin: 0.625rem;
+    --improvement-content-margin: 0.625rem;
+    --samples-title-margin: 0.625rem;
+    --section-margin: 2.5rem;
   }
 }
