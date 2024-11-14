@@ -69,6 +69,10 @@ a:focus-visible {
   margin-bottom: var(--section-margin, inital);
 }
 
+.caption {
+  margin-bottom: var(--caption-margin, inital);
+}
+
 .content {
   margin-bottom: var(--content-margin, inital);
 }

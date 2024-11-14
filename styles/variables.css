@@ -9,13 +9,15 @@
   --color-red: #FF0070;
   --paddington: 1.25rem;
   --section-margin: 3.85rem;
-  --content-margin: 0.85rem;
+  --caption-margin: 0.85rem;
+  --content-margin: 1rem;
 }
 
 @media (width <= 375px) {
   :root {
     --paddington: 0.625rem;
     --section-margin: 2.625rem;
-    --content-margin: 0.625rem;
+    --caption-margin: 0.625rem;
+    --content-margin: 0.825rem;
   }
 }
