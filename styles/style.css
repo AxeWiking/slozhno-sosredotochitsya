@@ -61,16 +61,16 @@ a:focus-visible {
   block-size: 100vh;
   min-block-size: 668px;
   padding: var(--paddington, inital);
-  margin-bottom: var(--margination, inital);
+  margin-bottom: var(--section-margin, inital);
 }
 
 .section {
   padding: 0 var(--paddington, 1.25rem);
-  margin-bottom: var(--margination, inital);
+  margin-bottom: var(--section-margin, inital);
 }
 
 .content {
-  margin-bottom: var(--margination, inital);
+  margin-bottom: var(--content-margin, inital);
 }
 
 .decorated-zone::before {
