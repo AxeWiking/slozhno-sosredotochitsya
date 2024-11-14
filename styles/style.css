@@ -154,7 +154,7 @@ a:focus-visible {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 0.75rem;
-  margin-bottom: var(--complexity-section-margin, inital);    
+  margin-bottom: var(--complexity-section-margin, inital);
 }
 
 .complexity__title {
@@ -302,11 +302,11 @@ a:focus-visible {
     inline-size: auto;
   }
 
-  .complexity {
+  .complexity__section {
     grid-template-columns: 1fr;
   }
   
-  .improvement {
+  .improvement__section {
     grid-template-columns: 1fr;
   }
 
