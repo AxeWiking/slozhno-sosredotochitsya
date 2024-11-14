@@ -65,8 +65,8 @@ a:focus-visible {
 }
 
 .section {
-  padding: var(--paddington, 1.25rem);
-  margin-bottom: var(--margination, inital);  
+  padding: 0 var(--paddington, 1.25rem);
+  margin-bottom: var(--margination, inital);
 }
 
 .content {
