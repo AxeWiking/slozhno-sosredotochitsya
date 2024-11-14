@@ -8,14 +8,14 @@
   --color-up-violet: #FF8DCB;
   --color-red: #FF0070;
   --paddington: 1.25rem;
-  --section-margin: 3.75rem;
+  --section-margin: 4rem;
   --content-margin: 0.875rem;
 }
 
 @media (width <= 375px) {
   :root {
     --paddington: 0.625rem;
-    --section-margin: 2.5rem;
+    --section-margin: 3rem;
     --content-margin: 0.625rem;
   }
 }
