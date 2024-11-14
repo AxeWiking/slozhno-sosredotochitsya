@@ -17,7 +17,7 @@
   :root {
     --paddington: 1.25rem;
     --section-margin: 3.85rem;
-    --caption-margin: 0.85rem;
+    --caption-margin: 0.9rem;
     --content-margin: 0.85rem;
   }
 }
@@ -26,7 +26,7 @@
   :root {
     --paddington: 0.625rem;
     --section-margin: 2.625rem;
-    --caption-margin: 0.625rem;
+    --caption-margin: 0.6rem;
     --content-margin: 0.875rem;
   }
 }
