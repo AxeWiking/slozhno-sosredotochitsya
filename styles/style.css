@@ -1,25 +1,21 @@
-h1 {
-  font-weight: 700;
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  line-height: calc(5 / 6);
-}
-
-h2 {
-  color: var(--contrast-color, yellow);
+h1, h2 {
   font-weight: 700;
   font-size: 1.125rem;
+  color: var(--invert-color, red);
 }
 
 h3 {
   font-weight: 700;
   font-size: 1.125rem;
   background-color: var(--accent-color, red);
+  color: var(--contrast-color, yellow);
 }
 
 h4 {
   font-weight: 400;
   font-size: 1.125rem;
   background-color: var(--accent-color, red);
+  color: var(--contrast-color, yellow);
 }
 
 a {
@@ -35,6 +31,12 @@ a:hover {
 
 a:focus-visible {
   border: solid 1px currentColor;
+}
+
+.large_text {
+  font-weight: 700;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  line-height: calc(5 / 6);
 }
 
 .page {
@@ -143,6 +145,7 @@ a:focus-visible {
 
 .header__caption {
   background-color: var(--accent-color, red);
+  color: var(--contrast-color, yellow);  
 }
 
 .header__card {
@@ -268,9 +271,6 @@ a:focus-visible {
 }
 
 .footer__title {
-  font-weight: 700;
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  line-height: calc(5 / 6);
   margin: auto;
   color: var(--title-color, inital);
   text-shadow: 4px 4px 0 var(--accent-color, inital);

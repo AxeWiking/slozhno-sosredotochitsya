@@ -5,7 +5,8 @@
     --title-color: var(--color-down-violet, violet);
     --accent-color: var(--color-red, red);
     --button-color: var(--color-red, red);
-    --contrast-color: var(--color-red, violet);
+    --contrast-color: var(--color-black, darkgray);
+    --invert-color: var(--color-red, red);
     --cover-image: url(../images/cover-image-dark.png);
     --decor-content: "REC\25CF";
   }
@@ -17,7 +18,8 @@
   --title-color: var(--color-down-violet, violet);
   --accent-color: var(--color-red, red);
   --button-color: var(--color-red, red);
-  --contrast-color: var(--color-red, violet);
+  --contrast-color: var(--color-black, darkgray);
+  --invert-color: var(--color-red, red);
   --cover-image: url(../images/cover-image-dark.png);
   --decor-content: "REC\25CF";
 }
