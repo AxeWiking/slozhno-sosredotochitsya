@@ -1,21 +1,21 @@
 h1, h2 {
+  color: var(--invert-color, red);
   font-weight: 700;
   font-size: 1.125rem;
-  color: var(--invert-color, red);
 }
 
 h3 {
+  color: var(--contrast-color, yellow);
   font-weight: 700;
   font-size: 1.125rem;
   background-color: var(--accent-color, red);
-  color: var(--contrast-color, yellow);
 }
 
 h4 {
+  color: var(--contrast-color, yellow);
   font-weight: 400;
   font-size: 1.125rem;
   background-color: var(--accent-color, red);
-  color: var(--contrast-color, yellow);
 }
 
 a {
@@ -144,8 +144,8 @@ a:focus-visible {
 }
 
 .header__caption {
+  color: var(--contrast-color, yellow);
   background-color: var(--accent-color, red);
-  color: var(--contrast-color, yellow);  
 }
 
 .header__card {
