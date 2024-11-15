@@ -30,11 +30,11 @@ a {
 }
 
 a:hover {
-  border-bottom: solid 1px var(--main-text-color, black);
+  border-bottom: solid 1px currentColor;
 }
 
 a:focus-visible {
-  border: solid 1px var(--main-text-color, black);
+  border: solid 1px currentColor;
 }
 
 .page {
@@ -45,11 +45,6 @@ a:focus-visible {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-}
-
-.title {
-  color: var(--title-color, inital);
-  text-shadow: 4px 4px 0 var(--accent-color, inital);
 }
 
 .header {
@@ -115,12 +110,12 @@ a:focus-visible {
 }
 
 .header__theme-menu-button_active {
-  border: solid 1px var(--button-color, red);
+  border: solid 1px currentColor;
   pointer-events: none;
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: solid 1px var(--button-color, red);
+  border-bottom: solid 1px currentColor;
 }
 
 .header__theme-menu-button:hover {
@@ -142,6 +137,12 @@ a:focus-visible {
 .header__title {
   grid-column: span 2;
   justify-self: start;
+  color: var(--title-color, inital);
+  text-shadow: 4px 4px 0 var(--accent-color, inital);
+}
+
+.header__caption {
+  background-color: var(--accent-color, red);
 }
 
 .header__card {
@@ -150,39 +151,39 @@ a:focus-visible {
   padding-bottom: var(--header-caption-padding, inital);
 }
 
-.complexity__section {
+.complexity.section {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 0.75rem;
   margin-bottom: var(--complexity-section-margin, inital);
 }
 
-.complexity__title {
+.complexity .title {
   margin-bottom: var(--complexity-title-margin, inital);
 }
 
-.complexity__caption {
+.complexity .caption {
   margin-bottom: var(--complexity-caption-margin, inital);
 }
 
-.complexity__content {
+.complexity .content {
   margin-bottom: var(--complexity-content-margin, inital);
 }
 
-.concentration__section {
+.concentration.section {
   margin-bottom: var(--concentration-section-margin, inital);
 }
 
-.concentration__title {
+.concentration .title {
   margin-bottom: var(--concentration-title-margin, inital);
   inline-size: 30%;
 }
 
-.concentration__caption {
+.concentration .caption {
   margin-bottom: var(--concentration-caption-margin, inital);
 }
 
-.concentration__content {
+.concentration .content {
   margin-bottom: var(--concentration-content-margin, inital);
 }
 
@@ -194,37 +195,38 @@ a:focus-visible {
   gap: 1rem;
 }
 
-.improvement__section {
+.improvement.section {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 1rem;
   margin-bottom: var(--improvement-section-margin, inital);
 }
 
-.improvement__title {
-  margin-bottom: var(--improvement-title-margin, inital);
-}
-
-.improvement__caption {
-  margin-bottom: var(--improvement-caption-margin, inital);
-}
-
-.improvement__content {
-  margin-bottom: var(--improvement-content-margin, inital);
-}
-
-.improvement__card-item {
+.improvement .card {
   display: flex;
   flex-direction: column;
   gap: 0.625rem;
 }
 
-.samples__section {
+.improvement .title {
+  margin-bottom: var(--improvement-title-margin, inital);
+}
+
+.improvement .caption {
+  margin-bottom: var(--improvement-caption-margin, inital);
+}
+
+.improvement .content {
+  margin-bottom: var(--improvement-content-margin, inital);
+}
+
+.samples.section {
   margin-bottom: var(--samples-section-margin, inital);
 }
 
 .samples__title {
   margin-bottom: var(--samples-title-margin, inital);
+  background-color: var(--accent-color, red);
 }
 
 .samples__card-list {
@@ -266,7 +268,12 @@ a:focus-visible {
 }
 
 .footer__title {
+  font-weight: 700;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  line-height: calc(5 / 6);
   margin: auto;
+  color: var(--title-color, inital);
+  text-shadow: 4px 4px 0 var(--accent-color, inital);
 }
 
 @media (width <= 768px) {
@@ -279,7 +286,7 @@ a:focus-visible {
     flex-direction: column;
   }
 
-  .concentration__title {
+  .concentration .title {
     inline-size: min-content;
   }
   
@@ -298,15 +305,15 @@ a:focus-visible {
     grid-column: span 2;
   }
 
-  .concentration__title {
+  .concentration .title {
     inline-size: auto;
   }
 
-  .complexity__section {
+  .complexity.section {
     grid-template-columns: 1fr;
   }
   
-  .improvement__section {
+  .improvement.section {
     grid-template-columns: 1fr;
   }
 
