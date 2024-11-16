@@ -52,8 +52,8 @@ a:focus-visible {
 .header {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   align-items: center;
   margin-bottom: var(--section-margin, inital);
   padding: var(--paddington, inital) 0;
@@ -321,7 +321,6 @@ a:focus-visible {
 }
 
 @media (width <= 375px) {
-  
   .concentration .title {
     inline-size: auto;
   }
