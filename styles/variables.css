@@ -7,16 +7,17 @@
   --color-down-violet: #DB00FF;
   --color-up-violet: #FF8DCB;
   --color-red: #FF0070;
-  --title-margin: 24px;
   --caption-margin: 8px;
   --content-margin: 20px;
   --paddington: 20px;
   --section-margin: 60px;
+  --title-margin: 24px;
 }
 
 @media (width <= 375px) {
   :root {
     --paddington: 10px;
     --section-margin: 30px;
+    --title-margin: 18px;
   }
 }
