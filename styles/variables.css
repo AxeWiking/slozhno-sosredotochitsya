@@ -17,7 +17,6 @@
 @media (width <= 375px) {
   :root {
     --paddington: 10px;
-    --section-margin: 30px;
-    --title-margin: 18px;
+    --section-margin: 36px;
   }
 }
