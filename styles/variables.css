@@ -10,6 +10,7 @@
   --caption-margin: 8px;
   --content-margin: 20px;
   --paddington: 20px;
+  --header-margin: 60px;
   --section-margin: 60px;
   --title-margin: 24px;
 }
@@ -17,7 +18,8 @@
 @media (width <= 375px) {
   :root {
     --paddington: 10px;
-    --section-margin: 32px;
-    --title-margin: 20px;
+    --header-margin: 42px;    
+    --section-margin: 34px;
+    --title-margin: 5px;
   }
 }
