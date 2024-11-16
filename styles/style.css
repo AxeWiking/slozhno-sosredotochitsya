@@ -63,7 +63,7 @@ a:focus-visible {
 
 .section {
   margin-bottom: var(--section-margin, inital);
-  padding: 0 var(--paddington, 20px);  
+  padding: 0 var(--paddington, 20px);
 }
 
 .title {
@@ -71,7 +71,7 @@ a:focus-visible {
 }
 
 .caption {
-  margin-bottom: var(--caption-margin, inital);  
+  margin-bottom: var(--caption-margin, inital);
 }
 
 .content {
@@ -146,7 +146,7 @@ a:focus-visible {
 .header__theme-menu-list {
   display: flex;
   gap: 12px;
-  margin-right: var(--paddington, inital);  
+  margin-right: var(--paddington, inital);
 }
 
 .header__title {
@@ -190,7 +190,7 @@ a:focus-visible {
 .improvement {
   display: grid;
   grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 2fr);
-  align-items: start;  
+  align-items: start;
   gap: 16px;
 }
 
