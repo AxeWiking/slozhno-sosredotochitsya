@@ -7,43 +7,19 @@
   --color-down-violet: #DB00FF;
   --color-up-violet: #FF8DCB;
   --color-red: #FF0070;
-  --paddington: 1.25rem;
-  --header-margin: 3.6rem;
-  --header-caption-padding: 3.4rem;
-  --complexity-title-margin: 0.625rem;
-  --complexity-caption-margin: 0.625rem;
-  --complexity-content-margin: 1.25rem;
-  --complexity-section-margin: 3.7rem;
-  --concentration-title-margin: 1.25rem;
-  --concentration-caption-margin: 0.625rem;
-  --concentration-content-margin: 1.25rem;
-  --concentration-section-margin: 3.7rem;
-  --improvement-title-margin: 0.625rem;
-  --improvement-caption-margin: 0.625rem;
-  --improvement-content-margin: 1.25rem;
-  --improvement-section-margin: 3.7rem;
-  --samples-section-margin: 3.7rem;
-  --samples-title-margin: 0.625rem;
+  --paddington: 20px;
+  --section-margin: 60px;
+  --title-margin: 24px;
+  --caption-margin: 8px;
+  --content-margin: 20px;
 }
 
 @media (width <= 375px) {
   :root {
-    --paddington: 0.625rem;
-    --header-margin: 2.5rem;
-    --header-caption-padding: 0.625rem;
-    --complexity-title-margin: 0.625rem;
-    --complexity-caption-margin: 0.625rem;
-    --complexity-content-margin: 1rem;
-    --complexity-section-margin: 2.5rem;
-    --concentration-title-margin: 0.625rem;
-    --concentration-caption-margin: 0.625rem;
-    --concentration-content-margin: 1rem;
-    --concentration-section-margin: 2.5rem;
-    --improvement-title-margin: 0.625rem;
-    --improvement-caption-margin: 0.625rem;
-    --improvement-content-margin: 1.2rem;
-    --improvement-section-margin: 2.2rem;
-    --samples-title-margin: 0.625rem;
-    --samples-section-margin: 1.9rem;
+    --paddington: 10px;
+    --section-margin: 30px;
+    --title-margin: 12px;
+    --caption-margin: 4px;
+    --content-margin: 10px;
   }
 }
